@@ -4,10 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poke Deck - ポケカプレイヤーためのデッキビルダーツール</title>
-  <meta name="description" content="Poke Deckはポケモンカードのデッキを簡単に構築・検索・共有できるアプリです。初心者から上級者まで、あなたのデッキ作りを強力にサポートします。">
+
+  <title>【無料】Poke Deck - ポケカのデッキ構築・検索・共有アプリ</title>
+
+  <meta name="description"
+    content="Poke Deckは、ポケモンカードのデッキ構築・検索・共有が簡単に行える無料アプリです。デッキコード入出力や画像共有に対応。初心者から上級者まで、あなたのポケカライフを強力にサポートします。">
+
+  <meta name="keywords" content="ポケカ, ポケモンカード, デッキビルダー, デッキ構築, デッキメーカー, アプリ">
+  <meta name="google-site-verification" content="v43R5v0OEflITc0gW__ZAq0FMqfh9kvAWN8nlnKqPVQ" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Poke Deck",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "GameApplication",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",  // レビューの平均評価（例）
+      "ratingCount": "120"   // レビュー数（例）
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    }
+  }
+  </script>
+
   <style>
+    /* body, container, headerなどのスタイル... */
+    /* ...screenshotsのスタイル... */
+    /* ...features-improvedのスタイル... */
+    /* (元のCSSは長いため省略。一つの<style>タグにまとめるのが理想です) */
     body {
+
       font-family: sans-serif;
       background: #111;
       color: #f2f2f2;
@@ -78,6 +110,78 @@
         height: 40px;
       }
     }
+
+    .screenshots {
+      display: flex;
+      overflow-x: auto;
+      gap: 16px;
+      padding: 20px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .screenshots img {
+      height: 400px;
+      width: auto;
+      border-radius: 12px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .screenshots::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .screenshots::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    .screenshots::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+
+    .screenshots::-webkit-scrollbar-thumb:hover {
+      background: #aaa;
+    }
+
+    .features-improved {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      color: #f0f0f0;
+    }
+
+    .feature-item {
+      background-color: #2c2c2c;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 1px solid #444;
+    }
+
+    .feature-item img {
+      max-width: 250px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .feature-item h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .feature-item p {
+      color: #cccccc;
+    }
   </style>
 </head>
 
@@ -142,13 +246,14 @@
       </ul>
     </section>
 
-<footer>
-  <p>&copy; 2025 Poke Deck Project</p>
-  <p>
-    <a href="https://x.com/koumuIn_poke" style="color:#4cc9f0">X (旧Twitter)</a> | 
-    <a href="https://encouraging-antelope-88a.notion.site/PokeGymMap-c70107f27ea74d78a4787b7779f9407f?source=copy_link" style="color:#4cc9f0">プライバシーポリシー</a>
-  </p>
-</footer>
+    <footer>
+      <p>&copy; 2025 Poke Deck Project</p>
+      <p>
+        <a href="https://x.com/koumuIn_poke" style="color:#4cc9f0">X (旧Twitter)</a> |
+        <a href="https://encouraging-antelope-88a.notion.site/PokeGymMap-c70107f27ea74d78a4787b7779f9407f?source=copy_link"
+          style="color:#4cc9f0">プライバシーポリシー</a>
+      </p>
+    </footer>
   </div>
 </body>
 
