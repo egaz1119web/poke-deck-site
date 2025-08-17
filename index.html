@@ -97,26 +97,38 @@
 
         <a href="https://play.google.com/store/apps/details?id=jp.egaz.pokemoncardtools&pcampaignid=web_share">
           <img src="image/googleplay.png" alt="Google Play"
-            style="height: 82px; width: auto; vertical-align: middle; object-fit: contain;" />
+            style="height: auto; width: 224px; vertical-align: middle; object-fit: contain;" />
         </a>
       </div>
-      <img src="app-mock.png" alt="アプリのスクリーンショット" style="width:100%; max-width:400px; margin-top:1rem;">
+      <div class="screenshots">
+        <img src="image/screen_1.PNG" alt="アプリのスクリーンショット1">
+        <img src="image/screen_2.PNG" alt="アプリのスクリーンショット2">
+        <img src="image/screen_3.PNG" alt="アプリのスクリーンショット3">
+        <img src="image/screen_4.PNG" alt="アプリのスクリーンショット4">
+        <img src="image/screen_5.PNG" alt="アプリのスクリーンショット5">
+      </div>
     </header>
 
     <section>
       <h2>特徴</h2>
-      <div class="features">
-        <div class="feature">
+      <div class="features-improved">
+        <div class="feature-item">
           <h3>🔍 カード検索</h3>
-          <p>名前や条件で高速検索。欲しいカードがすぐ見つかる。</p>
+          <p>名前やパック、イラストレーターなどの条件で検索。欲しいカードがすぐ見つかる！</p>
         </div>
-        <div class="feature">
+        <div class="feature-item">
           <h3>🧩 デッキ構築</h3>
-          <p>ドラッグ＆ドロップで直感的にデッキを作れる。</p>
+          <p>ドラッグ＆ドロップで直感的並び替え可能。画像からカードに変換できるので発売前のカードでにデッキが作れる!</p>
         </div>
-        <div class="feature">
+        <div class="feature-item">
           <h3>📤 デッキ共有</h3>
-          <p>自慢のデッキをSNSでシェア。QRコード出力も対応！</p>
+          <img src="image/deck_image.JPG" alt="デッキ共有のイメージ">
+          <p>自慢のデッキをSNSでシェア。ポケモンのドット絵と一緒に画像に保存できる！</p>
+        </div>
+        <div class="feature-item">
+          <h3>📝 公式のデッキコード</h3>
+          <img src="image/official_deck.PNG" alt="公式デッキコードのイメージ">
+          <p>公式のデッキコードの生成や、デッキコードからのインポートにも対応！</p>
         </div>
       </div>
     </section>
@@ -130,18 +142,119 @@
       </ul>
     </section>
 
-    <section>
-      <h2>ユーザーの声</h2>
-      <blockquote>「こんなアプリ欲しかった！初心者でも使いやすい！」 ★★★★★</blockquote>
-      <blockquote>「大会前は必ず使ってます。デッキの保存が便利！」 ★★★★☆</blockquote>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Poke Deck Project</p>
-      <p><a href="#" style="color:#4cc9f0">X (旧Twitter)</a> | <a href="#" style="color:#4cc9f0">GitHub</a> | <a href="#"
-          style="color:#4cc9f0">プライバシーポリシー</a></p>
-    </footer>
+<footer>
+  <p>&copy; 2025 Poke Deck Project</p>
+  <p>
+    <a href="https://x.com/koumuIn_poke" style="color:#4cc9f0">X (旧Twitter)</a> | 
+    <a href="https://encouraging-antelope-88a.notion.site/PokeGymMap-c70107f27ea74d78a4787b7779f9407f?source=copy_link" style="color:#4cc9f0">プライバシーポリシー</a>
+  </p>
+</footer>
   </div>
 </body>
 
 </html>
+
+
+<head>
+  <style>
+    /* ヘッダー全体を中央揃えにするとバランスが良くなります */
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .screenshots {
+      display: flex;
+      /* 画像を横並びにします */
+      overflow-x: auto;
+      /* コンテナの幅を超えたら横スクロールを有効にします */
+      gap: 16px;
+      /* 画像と画像の間の隙間を16pxに設定します */
+      padding: 20px;
+      /* コンテナの内側に余白を持たせます */
+      /* スクロールバーがコンテンツに被らないようにします（主にモバイル向け）*/
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .screenshots img {
+      height: 400px;
+      /* 全ての画像の高さを400pxに揃えます */
+      width: auto;
+      /* 高さに合わせて幅を自動調整します */
+      border-radius: 12px;
+      /* 画像の角を少し丸くします */
+      flex-shrink: 0;
+      /* 画像が縮まないようにします */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      /* 画像に影をつけて立体感を出します */
+    }
+
+    /* 横スクロールバーの見た目を調整（任意） */
+    .screenshots::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .screenshots::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    .screenshots::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+
+    .screenshots::-webkit-scrollbar-thumb:hover {
+      background: #aaa;
+    }
+  </style>
+</head>
+
+<style>
+  .features-improved {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 最小幅300pxで自動的に列数を調整 */
+    gap: 20px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    /* 背景を暗い色に変更 */
+    border-radius: 10px;
+    color: #f0f0f0;
+    /* 全体の文字色を明るい色に */
+  }
+
+  .feature-item {
+    background-color: #2c2c2c;
+    /* アイテムの背景を暗い色に */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* 影を少し調整 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* アイテム内を中央揃えに */
+    text-align: center;
+    border: 1px solid #444;
+    /* 境界線を少し追加して視認性アップ */
+  }
+
+  .feature-item img {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .feature-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ffffff;
+    /* 見出しの文字色を白に */
+  }
+
+  /* アイテム内のテキストカラーも継承されますが、明示的に指定する場合 */
+  .feature-item p {
+    color: #cccccc;
+  }
+</style>
